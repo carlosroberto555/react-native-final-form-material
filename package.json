@@ -1,12 +1,14 @@
 {
 	"name": "react-native-final-form-material",
 	"title": "React Native Final Form Material",
-	"version": "1.0.0",
+	"version": "1.0.3",
 	"description": "A Material Design library that uses react-native-paper",
 	"main": "index.js",
 	"types": "lib",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"build": "tsc -p .",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepublish": "tsc -p ."
 	},
 	"repository": {
 		"type": "git",
@@ -35,6 +37,8 @@
 	"dependencies": {
 		"final-form": "^4.18.4",
 		"react-final-form": "^6.3.0",
-		"react-native-paper": "^2.16.0"
+		"react-native-paper": "^2.16.0",
+		"react-native-vector-icons": "^6.6.0",
+		"styled-components": "^4.3.2"
 	}
 }

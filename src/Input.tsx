@@ -6,8 +6,8 @@ type Props = FieldRenderProps<string, HTMLElement & TextInput> & {
 	[key: string]: any
 }
 
-function FieldInput(props: Props) {
-	const { input, meta, innerRef, ...rest } = props
+function Input(props: Props) {
+	const { input, meta, innerRef, style, ...rest } = props
 	const { onChange, onBlur, onFocus, value } = input
 	return (
 		<TextInput
@@ -15,7 +15,7 @@ function FieldInput(props: Props) {
 			ref={innerRef}
 			value={value}
 			mode="outlined"
-			style={{ marginBottom: 8 }}
+			style={{ marginBottom: 8, ...style }}
 			onBlur={() => onBlur()}
 			onFocus={() => onFocus()}
 			onChangeText={onChange}
@@ -23,4 +23,4 @@ function FieldInput(props: Props) {
 	)
 }
 
-export default FieldInput
+export default Input
