@@ -6,12 +6,13 @@ import { FieldRenderProps } from 'react-final-form'
 import RadioButtonLabel from './RadioButtonLabel'
 
 type RadioButtomItem = [string, string]
+type FieldProps = FieldRenderProps<string, HTMLElement & RadioButton>
 
-interface Props extends FieldRenderProps<string, HTMLElement & RadioButton> {
+export interface RadioButtonsProps extends FieldProps {
 	items?: RadioButtomItem[]
 }
 
-function RadioButtons(props: Props) {
+const RadioButtons: React.FC<RadioButtonsProps> = props => {
 	const { input, meta, items } = props
 	const { onChange, value } = input
 
