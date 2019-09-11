@@ -4,7 +4,7 @@ import { FieldRenderProps } from 'react-final-form'
 
 type FieldProps = FieldRenderProps<string, HTMLElement & TextInput>
 
-export interface TextAreaProps extends FieldProps, TextInput {}
+export interface TextAreaProps extends FieldProps {}
 
 const TextArea: React.SFC<TextAreaProps> = props => {
 	const { input, meta, ...rest } = props

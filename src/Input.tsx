@@ -4,7 +4,7 @@ import { FieldRenderProps } from 'react-final-form'
 
 type FieldProps = FieldRenderProps<string, HTMLElement & TextInput>
 
-export interface InputProps extends FieldProps, TextInput {
+export interface InputProps extends FieldProps {
 	[key: string]: any
 }
 
