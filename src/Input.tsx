@@ -11,7 +11,6 @@ function Input(props: Props) {
 	const { onChange, onBlur, onFocus, value } = input
 	return (
 		<TextInput
-			{...rest}
 			ref={innerRef}
 			value={value}
 			mode="outlined"
@@ -19,6 +18,7 @@ function Input(props: Props) {
 			onBlur={() => onBlur()}
 			onFocus={() => onFocus()}
 			onChangeText={onChange}
+			{...rest}
 		/>
 	)
 }

@@ -7,7 +7,6 @@ function TextArea(props: FieldRenderProps<string, HTMLElement & TextInput>) {
 	const { onChange, onBlur, onFocus, value } = input
 	return (
 		<TextInput
-			{...rest}
 			multiline
 			value={value}
 			mode="outlined"
@@ -16,6 +15,7 @@ function TextArea(props: FieldRenderProps<string, HTMLElement & TextInput>) {
 			onBlur={() => onBlur()}
 			onFocus={() => onFocus()}
 			onChangeText={onChange}
+			{...rest}
 		/>
 	)
 }
