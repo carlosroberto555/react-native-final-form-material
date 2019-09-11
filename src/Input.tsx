@@ -2,16 +2,17 @@ import React from 'react'
 import { TextInput } from 'react-native-paper'
 import { FieldRenderProps } from 'react-final-form'
 
-type Props = FieldRenderProps<string, HTMLElement & TextInput> & {
+type FieldProps = FieldRenderProps<string, HTMLElement & TextInput>
+
+export interface InputProps extends FieldProps, TextInput {
 	[key: string]: any
 }
 
-function Input(props: Props) {
+const Input: React.FC<InputProps> = props => {
 	const { input, meta, innerRef, style, ...rest } = props
 	const { onChange, onBlur, onFocus, value } = input
 	return (
 		<TextInput
-			{...rest}
 			ref={innerRef}
 			value={value}
 			mode="outlined"
@@ -19,6 +20,7 @@ function Input(props: Props) {
 			onBlur={() => onBlur()}
 			onFocus={() => onFocus()}
 			onChangeText={onChange}
+			{...rest}
 		/>
 	)
 }

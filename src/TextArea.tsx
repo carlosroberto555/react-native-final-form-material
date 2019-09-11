@@ -2,12 +2,15 @@ import React from 'react'
 import { TextInput } from 'react-native-paper'
 import { FieldRenderProps } from 'react-final-form'
 
-function TextArea(props: FieldRenderProps<string, HTMLElement & TextInput>) {
+type FieldProps = FieldRenderProps<string, HTMLElement & TextInput>
+
+export interface TextAreaProps extends FieldProps, TextInput {}
+
+const TextArea: React.FC<TextAreaProps> = props => {
 	const { input, meta, ...rest } = props
 	const { onChange, onBlur, onFocus, value } = input
 	return (
 		<TextInput
-			{...rest}
 			multiline
 			value={value}
 			mode="outlined"
@@ -16,6 +19,7 @@ function TextArea(props: FieldRenderProps<string, HTMLElement & TextInput>) {
 			onBlur={() => onBlur()}
 			onFocus={() => onFocus()}
 			onChangeText={onChange}
+			{...rest}
 		/>
 	)
 }
