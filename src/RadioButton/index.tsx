@@ -12,7 +12,7 @@ export interface RadioButtonsProps extends FieldProps {
 	items?: RadioButtomItem[]
 }
 
-const RadioButtons: React.FC<RadioButtonsProps> = props => {
+const RadioButtons: React.SFC<RadioButtonsProps> = props => {
 	const { input, meta, items } = props
 	const { onChange, value } = input
 

@@ -1,7 +1,7 @@
 {
 	"name": "react-native-final-form-material",
 	"title": "React Native Final Form Material",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "A Material Design library that uses react-native-paper",
 	"main": "index.js",
 	"types": "lib",

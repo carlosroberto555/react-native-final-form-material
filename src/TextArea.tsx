@@ -6,7 +6,7 @@ type FieldProps = FieldRenderProps<string, HTMLElement & TextInput>
 
 export interface TextAreaProps extends FieldProps, TextInput {}
 
-const TextArea: React.FC<TextAreaProps> = props => {
+const TextArea: React.SFC<TextAreaProps> = props => {
 	const { input, meta, ...rest } = props
 	const { onChange, onBlur, onFocus, value } = input
 	return (

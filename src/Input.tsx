@@ -8,7 +8,7 @@ export interface InputProps extends FieldProps, TextInput {
 	[key: string]: any
 }
 
-const Input: React.FC<InputProps> = props => {
+const Input: React.SFC<InputProps> = props => {
 	const { input, meta, innerRef, style, ...rest } = props
 	const { onChange, onBlur, onFocus, value } = input
 	return (
