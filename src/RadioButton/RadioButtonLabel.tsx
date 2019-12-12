@@ -3,7 +3,7 @@ import { View, TouchableOpacity, ViewProps } from "react-native";
 import { RadioButton, Text } from "react-native-paper";
 import { Props as RadioButtonProps } from "react-native-paper/lib/typescript/src/components/RadioButton/RadioButton";
 
-interface Props extends RadioButtonProps, ViewProps {
+interface Props extends Omit<RadioButtonProps, "theme">, ViewProps {
   label: string;
   checkedValue: any;
   onChange: (val: any) => void;
