@@ -1,44 +1,44 @@
 {
-	"name": "react-native-final-form-material",
-	"title": "React Native Final Form Material",
-	"version": "1.0.5",
-	"description": "A Material Design library that uses react-native-paper",
-	"main": "index.js",
-	"types": "lib",
-	"scripts": {
-		"build": "tsc -p .",
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"prepublish": "tsc -p ."
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/carlosroberto555/react-native-final-form-material.git",
-		"baseUrl": "https://github.com/carlosroberto555/react-native-final-form-material"
-	},
-	"keywords": [
-		"react-native"
-	],
-	"author": {
-		"name": "Carlos Roberto",
-		"email": "carlosrpj555@gmail.com"
-	},
-	"license": "MIT",
-	"licenseFilename": "LICENSE",
-	"readmeFilename": "README.md",
-	"peerDependencies": {
-		"react": "^16.8.6",
-		"react-native": ">=0.59"
-	},
-	"devDependencies": {
-		"@types/react-native": "^0.60.4",
-		"react": "^16.8.6",
-		"react-native": "^0.60.4"
-	},
-	"dependencies": {
-		"final-form": "^4.18.4",
-		"react-final-form": "^6.3.0",
-		"react-native-paper": "^2.16.0",
-		"react-native-vector-icons": "^6.6.0",
-		"styled-components": "^4.3.2"
-	}
+  "name": "react-native-final-form-material",
+  "title": "React Native Final Form Material",
+  "version": "1.0.5",
+  "description": "A Material Design library that uses react-native-paper",
+  "main": "index.js",
+  "types": "lib",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosroberto555/react-native-final-form-material.git",
+    "baseUrl": "https://github.com/carlosroberto555/react-native-final-form-material"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": {
+    "name": "Carlos Roberto",
+    "email": "carlosrpj555@gmail.com"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-native": ">=0.59"
+  },
+  "devDependencies": {
+    "@types/react-native": "^0.60.4",
+    "react": "^16.8.6",
+    "react-native": "^0.60.4"
+  },
+  "dependencies": {
+    "final-form": "^4.18.4",
+    "react-final-form": "^6.3.0",
+    "react-native-paper": "^3.3.0",
+    "react-native-vector-icons": "^6.6.0",
+    "styled-components": "^4.3.2"
+  }
 }
